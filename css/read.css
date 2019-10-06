@@ -513,6 +513,50 @@ textarea.materialize-textarea,
 
 /*MEDIA QUERIES*/
 /* Larger than normal laptop sizes */
+@media only screen and (min-width: 1601px){
+
+    /* CONTENT1 */
+    #content1.row .col.offset-l4,
+    #content2.row .col.offset-l4 {
+        margin-left: 25%;
+    }
+
+    #content1.row .col.l4,
+    #content2.row .col.l4 {
+        width: 50%;
+    }
+    /* END OF CONTENT1 */
+
+    /* COVER IMAGE */
+    #cover.row .col.offset-l3 {
+        margin-left: 17.5%;
+    }
+
+    #cover.row .col.l6 {
+        width: 65%;
+    }
+    /* END OF COVER IMAGE */
+
+    /* SHARE */
+    #share.row .col.offset-l3,
+    #author.row .col.offset-l3,
+    #prevnext.row .col.offset-l3,
+    #comments.row .col.offset-l3,
+    #discuss.row .col.offset-l3  {
+        margin-left: 20%;
+    }
+
+    #share.row .col.l6,
+    #author.row .col.l6,
+    #prevnext.row .col.m12,
+    #comments.row .col.l6:first-child,
+    #discuss.row .col.l6:first-child {
+        width: 60%;
+    }
+    /* END OF SHARE */
+
+}
+
 @media only screen and (max-width: 1600px) and (min-width: 1201px){
 
     /* CONTENT1 */
