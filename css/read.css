@@ -236,49 +236,67 @@ nav .nav-wrapper ul li a:hover {
     margin-top: 70px;
 }
 
+#prevnext .row .col .card .card-image,
+#prevnext .row .col .card .card-image img {
+    height: 100% !important;
+}
+
+#prevnext .row .col .card .card-image img {
+    width: 100% !important;
+    background-size:100% 100%;
+}
+
 #prevnext .row .col .card .card-image .card-title {
     color: #fff;
     top: 0;
     right: 0;
     text-align: right;
-    padding: 15px 15px 24px 24px;
     background-color: #212121ab;
+    padding: 0 !important;
 }
 
 #prevnext .row .col:nth-child(2) .card .card-image .card-title {
     text-align: left;
-    padding: 15px 24px 24px 15px;
 }
 
 #prevnext .row .col .card .card-image .card-title p {
-    line-height: 2;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+#prevnext .row .col:first-child .card .card-image .card-title p {
+    right: 5%;
+}
+
+#prevnext .row .col:nth-child(2) .card .card-image .card-title p {
+    left: 5%;
 }
 
 #prevnext .row .col .card .card-image .card-title p .material-icons {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 #prevnext .row .col .card .card-image .card-title h4 {
     font-size: 40px;
     position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
-}
-
-#prevnext .row .col:first-child .card .card-image .card-title h4 {
-    padding-right: 30px;
+    bottom: 10%;
+    left: 15%;
+    right: 10%;
 }
 
 #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-    padding-left: 30px;
+    left: 10%;
+    right: 15%;
 }
 /* END OF PREVNEXT */
 
@@ -495,12 +513,121 @@ textarea.materialize-textarea,
 
 /*MEDIA QUERIES*/
 /* Larger than normal laptop sizes */
-@media screen and (min-width: 1600px) {
+@media only screen and (max-width: 1600px) and (min-width: 1201px){
 
+    /* CONTENT1 */
+    #content1.row .col.offset-l4 {
+        margin-left: 17.5%;
+    }
+
+    #content1.row .col.l4 {
+        width: 65%;
+    }
+    /* END OF CONTENT1 */
+
+    /* COVER IMAGE */
+    #cover.row .col.offset-l3 {
+        margin-left: 5%;
+    }
+
+    #cover.row .col.m12 {
+        width: 90%;
+    }
+    /* END OF COVER IMAGE */
+
+    /* CONTENT2 ARTICLE */
+    #content2.row .col.offset-l4 {
+        margin-left: 17.5%;
+    }
+
+    #content2.row .col.m12 {
+        width: 65%;
+    }
+    /* END OF CONTENT2 ARTICLE */
+
+    /* SHARE */
+    #share.row .col.offset-l3 {
+        margin-left: 10%;
+    }
+
+    #share.row .col.m12 {
+        width: 80%;
+    }
+    /* END OF SHARE */
+
+    /* AUTHOR */
+    #author.row .col.offset-l3 {
+        margin-left: 10%;
+    }
+
+    #author.row .col.m12 {
+        width: 80%;
+    }
+    /* END OF AUTHOR */
+
+    /* PREVNEXT */
+    #prevnext.row .col.offset-l3 {
+        margin-left: 10%;
+    }
+
+    #prevnext.row .col.m12 {
+        width: 80%;
+    }
+
+    #prevnext .row .col:first-child .card .card-image .card-title p {
+        right: 10%;
+    }
+    
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p {
+        left: 10%;
+    }
+
+    #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
+        padding-left: 15px;
+    }
+
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
+        padding-right: 15px;
+    }
+
+    #prevnext .row .col .card .card-image .card-title h4 {
+        right: 10%;
+        left: 10%;
+    }
+
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
+        left: 10%;
+        right: 10%;
+    }
+    /* END OF PREVNEXT */
+
+    /* COMMENTS */
+    #comments.row .col.offset-l3 {
+        margin-left: 10%;
+    }
+
+    #comments.row .col.m12:first-child {
+        width: 80%;
+    }
+    /* END OF COMMENTS */
+
+    /* DISCUSS */
+    #discuss.row .col.offset-l3 {
+        margin-left: 10%;
+    }
+
+    #discuss.row .col.m12:first-child {
+        width: 80%;
+    }
+
+    #discuss.row .col.m12 form.row .col.m12 {
+        width: 100%;
+    }
+    /* END OF DISCUSS */
 
 }
 
-@media only screen and (max-width: 1301px) and (min-width: 993px){
+@media only screen and (max-width: 1200px) and (min-width: 993px){
 
     /* NAVIGATION */
     nav .nav-wrapper .brand-logo {
@@ -610,40 +737,27 @@ textarea.materialize-textarea,
         width: 70%;
     }
 
-    #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 35px;
+    #prevnext .row .col .card .card-image .card-title p .material-icons {
+        font-size: 30px;
     }
 
-    #prevnext .row .col .card .card-image .card-title {
-        padding: 10px;
+    #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
+        padding-left: 15px;
     }
-    
-    #prevnext .row .col:nth-child(2) .card .card-image .card-title {
-        padding: 10px;
+
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
+        padding-right: 15px;
     }
-    
-    #prevnext .row .col .card .card-image .card-title p {
-        line-height: 1;
-        margin: 8px 0 8px 0;
-        font-size: 20px;
-    }
-    
-    #prevnext .row .col .card .card-image .card-title p .material-icons {
-        font-size: 20px;
-    }
-    
+
     #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 28px;
+        font-size: 30px;
+        right: 5%;
+        left: 10%;
     }
-    
-    #prevnext .row .col:first-child .card .card-image .card-title h4 {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    
+
     #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-        padding-left: 10px;
-        padding-right: 10px;
+        left: 5%;
+        right: 10%;
     }
     /* END OF PREVNEXT */
 
@@ -745,35 +859,36 @@ textarea.materialize-textarea,
 
     /* PREVNEXT */
     #prevnext {
-        margin-top: 40px;
+        margin: 40px 45px 0 45px;
     }
 
-    #prevnext .row .col .card .card-image .card-title {
-        padding: 10px;
+    #prevnext .row .col:first-child .card .card-image .card-title p {
+        right: 10%;
     }
 
-    #prevnext .row .col:nth-child(2) .card .card-image .card-title {
-        padding: 10px;
-    }
-
-    #prevnext .row .col .card .card-image .card-title p {
-        line-height: 1.5;
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p {
+        left: 10%;
     }
 
     #prevnext .row .col .card .card-image .card-title p .material-icons {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
+        padding-left: 15px;
+    }
+
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
+        padding-right: 15px;
     }
 
     #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 32px;
-    }
-
-    #prevnext .row .col:first-child .card .card-image .card-title h4 {
-        padding: 0 20px 20px 10px;
+        font-size: 37px;
+        left: 10%;
     }
 
     #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-        padding: 0 10px 20px 20px;
+        right: 10%;
     }
     /* END OF PREVNEXT */
 
@@ -885,38 +1000,16 @@ textarea.materialize-textarea,
 
     /* PREVNEXT */
     #prevnext {
-        margin-top: 40px;
-    }
-
-    #prevnext .row .col .card .card-image .card-title {
-        padding: 10px;
-    }
-
-    #prevnext .row .col:nth-child(2) .card .card-image .card-title {
-        padding: 10px;
-    }
-
-    #prevnext .row .col .card .card-image .card-title p {
-        line-height: 1.5;
-        margin: 8px 0 8px 0;
-    }
-
-    #prevnext .row .col .card .card-image .card-title p .material-icons {
-        font-size: 20px;
+        margin-top: 40px 30px 0 30px;
     }
 
     #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 30px;
-    }
-
-    #prevnext .row .col:first-child .card .card-image .card-title h4 {
-        padding-right: 20px;
-        padding-left: 10px;
+        font-size: 32px;
+        left: 10%;
     }
 
     #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-        padding-left: 20px;
-        padding-right: 10px;
+        right: 10%;
     }
     /* END OF PREVNEXT */
 
@@ -1064,36 +1157,59 @@ textarea.materialize-textarea,
         margin-top: 40px;
     }
 
-    #prevnext .row .col .card .card-image .card-title {
+    #prevnext .row .col:first-child .card .card-image .card-title,
+    #prevnext .row .col:first-child .card .card-image .card-title p {
         text-align: left;
-        padding: 10px 12px 12px 10px;
-        direction: rtl;
+        direction: ltr;
     }
 
     #prevnext .row .col:nth-child(2) .card .card-image .card-title {
         text-align: right;
-        padding: 10px 10px 12px 12px;
+    }
+
+    #prevnext .row .col:first-child .card .card-image .card-title p {
+        position: relative;
+        right: 0;
+        left: 10%;
+        direction: rtl;
+        text-align: left;
+    }
+    
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p {
+        left: 0;
+        right: 10%;
+        direction: rtl;
+        text-align: right;
     }
 
     #prevnext .row .col .card .card-image .card-title p {
-        line-height: 1;
+        font-size: 25px;
     }
 
     #prevnext .row .col .card .card-image .card-title p .material-icons {
         font-size: 25px;
     }
 
+    #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
     #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 32px;
-        direction: ltr;
+        font-size: 35px;
+        bottom: 15%;
+        left: 10%;
+        right: 5%;
     }
-
-    #prevnext .row .col:first-child .card .card-image .card-title h4 {
-        padding-left: 25px;
-    }
-
+    
     #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-        padding-right: 25px;
+        left: 5%;
+        right: 10%;
     }
     /* END OF PREVNEXT */
 
@@ -1339,47 +1455,59 @@ textarea.materialize-textarea,
         margin-top: 30px;
     }
 
-    #prevnext .row .col .card .card-image .card-title {
+    #prevnext .row .col:first-child .card .card-image .card-title,
+    #prevnext .row .col:first-child .card .card-image .card-title p {
         text-align: left;
-        padding: 10px;
-        direction: rtl;
+        direction: ltr;
     }
 
     #prevnext .row .col:nth-child(2) .card .card-image .card-title {
         text-align: right;
-        padding: 10px;
+    }
+
+    #prevnext .row .col:first-child .card .card-image .card-title p {
+        position: relative;
+        right: 0;
+        left: 7.5%;
+        direction: rtl;
+        text-align: left;
+    }
+    
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p {
+        left: 0;
+        right: 7.5%;
+        direction: rtl;
+        text-align: right;
     }
 
     #prevnext .row .col .card .card-image .card-title p {
-        line-height: 1.5;
         font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
     #prevnext .row .col .card .card-image .card-title p .material-icons {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
-        padding-left: 10;
+        padding-left: 0;
+        padding-right: 20px;
     }
-
+    
     #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
         padding-right: 0;
-    }
-
-    #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 25px;
-        direction: ltr;
-    }
-
-    #prevnext .row .col:first-child .card .card-image .card-title h4 {
         padding-left: 20px;
     }
 
+    #prevnext .row .col .card .card-image .card-title h4 {
+        font-size: 30px;
+        bottom: 5%;
+        left: 7.5%;
+        right: 5%;
+    }
+    
     #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-        padding-right: 20px;
+        left: 5%;
+        right: 7.5%;
     }
     /* END OF PREVNEXT */
 
@@ -1638,47 +1766,59 @@ textarea.materialize-textarea,
         margin-top: 30px;
     }
 
-    #prevnext .row .col .card .card-image .card-title {
+    #prevnext .row .col:first-child .card .card-image .card-title,
+    #prevnext .row .col:first-child .card .card-image .card-title p {
         text-align: left;
-        padding: 10px;
-        direction: rtl;
+        direction: ltr;
     }
 
     #prevnext .row .col:nth-child(2) .card .card-image .card-title {
         text-align: right;
-        padding: 10px;
+    }
+
+    #prevnext .row .col:first-child .card .card-image .card-title p {
+        position: relative;
+        right: 0;
+        left: 7.5%;
+        direction: rtl;
+        text-align: left;
+    }
+    
+    #prevnext .row .col:nth-child(2) .card .card-image .card-title p {
+        left: 0;
+        right: 7.5%;
+        direction: rtl;
+        text-align: right;
     }
 
     #prevnext .row .col .card .card-image .card-title p {
-        line-height: 1.5;
         font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
     #prevnext .row .col .card .card-image .card-title p .material-icons {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #prevnext .row .col:first-child .card .card-image .card-title p .material-icons {
-        padding-left: 10;
+        padding-left: 0;
+        padding-right: 20px;
     }
-
+    
     #prevnext .row .col:nth-child(2) .card .card-image .card-title p .material-icons {
         padding-right: 0;
-    }
-
-    #prevnext .row .col .card .card-image .card-title h4 {
-        font-size: 25px;
-        direction: ltr;
-    }
-
-    #prevnext .row .col:first-child .card .card-image .card-title h4 {
         padding-left: 20px;
     }
 
+    #prevnext .row .col .card .card-image .card-title h4 {
+        font-size: 30px;
+        bottom: 5%;
+        left: 7.5%;
+        right: 5%;
+    }
+    
     #prevnext .row .col:nth-child(2) .card .card-image .card-title h4 {
-        padding-right: 20px;
+        left: 5%;
+        right: 7.5%;
     }
     /* END OF PREVNEXT */
 

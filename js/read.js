@@ -4,19 +4,9 @@ $(document).ready(function(){
     var height = (0.36 * width) / 0.64;
     $('#cover-image').height(height);
 
-    $('.materialboxed').materialbox();
+    var cardwidth = $('.card').width();
+    $('.card').height(cardwidth);
 
-    // window.PixleeAsyncInit = function() {
-    //     Pixlee.init(
-    //         {
-    //             apiKey:'WIb0AMEuq3UoYFAz36IF'
-    //         }
-    //     );
-    //     Pixlee.addSimpleWidget(
-    //         {
-    //             widgetId:'21897'
-    //         }
-    //     );
-    // };
+    $('.materialboxed').materialbox();
 
 });
