@@ -243,7 +243,8 @@ nav .nav-wrapper ul li a:hover {
 
 #prevnext .row .col .card .card-image img {
     width: 100% !important;
-    background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 #prevnext .row .col .card .card-image .card-title {
@@ -513,7 +514,8 @@ textarea.materialize-textarea,
 
 /*MEDIA QUERIES*/
 /* Larger than normal laptop sizes */
-@media only screen and (min-width: 1601px){
+/* @media only screen and (min-width: 1601px){ */
+@media only screen and (max-width: 1850px) and (min-width: 1601px){
 
     /* CONTENT1 */
     #content1.row .col.offset-l4,

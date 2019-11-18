@@ -1,0 +1,306 @@
+/* TOP BAR */
+.top-bar {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+}
+
+.top-bar ul li:first-child {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.top-bar ul li {
+    padding: 0 10px;
+    display: inline;
+}
+
+.top-bar ul li a {
+    font-size: 20px;
+}
+
+.top-bar ul li:last-child a i {
+    font-size: 30px;
+}
+/* END OF TOP BAR */
+
+
+/* BLOG LOGO */
+.blog-logo img {
+    height: 65px;
+    margin: 70px auto 30px auto;
+    -webkit-filter: brightness(5%);
+    filter: brightness(5%);
+}
+/* END OF BLOG LOGO */
+
+
+/* NAVIGATION */
+ nav {
+    height: 93px;
+    line-height: 90px;
+    box-shadow: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav .sidenav-trigger {
+    float: right;
+}
+
+nav .sidenav-trigger i {
+    font-size: 27px;
+}
+
+nav .nav-wrapper ul li a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav .nav-wrapper ul li a:hover {
+    border-bottom: 3px solid #212121;
+    background-color: white;
+}
+/* END OF NAVIGATION */
+
+
+/* JUMBO */
+#jumbo {
+    margin: 20px 50px;
+}
+
+#jumbo .col {
+    padding: 0 2.5rem;
+}
+
+#jumbo .l4 {
+    max-height: 630px;
+}
+
+#jumbo .col .card {
+    height: 600px;
+}
+
+#jumbo .col .card .card-image,
+#jumbo .col .card .card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#jumbo .col .card .card-image img {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#jumbo .col .card .card-image .card-title {
+    color: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 45px !important;
+}
+
+#jumbo .col .card .card-image .card-title div.cont {
+    padding: 20px;
+    height: 100% !important;
+    position: relative;
+}
+
+#jumbo .col:first-child .card .card-image .card-title div.cont {
+    border-left: 2px solid #00ffff;
+}
+
+#jumbo .col:nth-child(2) .card .card-image .card-title div.cont {
+    border-top: 2px solid #00ffff;
+}
+
+#jumbo .col:last-child .card .card-image .card-title div.cont {
+    border-right: 2px solid #00ffff;
+}
+
+#jumbo .col .card .card-image .card-title div.cont button {
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#jumbo .col:last-child .card .card-image .card-title div.cont button {
+    float: right;
+}
+
+#jumbo .col .card .card-image .card-title div.cont div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+
+#jumbo .col .card .card-image .card-title div.cont div h4 {
+    line-height: 1.2;
+    font-size: 37px;
+}
+
+#jumbo .col .card .card-image .card-title div.cont div p {
+    padding: 15px 0;
+}
+
+#jumbo .col .card .card-image .card-title div.cont div p,
+#jumbo .col .card .card-image .card-title div.cont div p i {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#jumbo .col .card .card-image .card-title div.cont div p i {
+    vertical-align: bottom;
+    font-size: 17px;
+}
+/* END OF JUMBO */
+
+
+/* POSTS */
+.posts {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 125px;
+}
+
+* { box-sizing: border-box; }
+
+.grid {
+    background-color: #EEE;
+    max-width: 100%;
+    margin: 0 auto !important;
+}
+
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 31.4%;
+}
+
+
+.grid-item {
+    /* width: 31.4%; */
+    height: 550px;
+    float: left;
+    /* vertical gutter */
+    margin-bottom: 40px;
+    background: #D26;
+}
+
+.grid-item--width2 {
+    width: 65.33%;
+}
+
+.grid-item--height2 {
+    height: 650px;
+}
+
+.grid-item--height3 {
+    height: 550px;
+}
+
+.grid-item--width3 {
+    width: 520px;
+}
+/* END OF POSTS */
+
+
+/*MEDIA QUERIES*/
+/* Larger than normal laptop sizes */
+@media only screen and (min-width: 1601px){
+
+
+
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1201px){
+
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 993px){
+
+    /* NAVIGATION */
+
+    /* END OF NAVIGATION */
+
+}
+
+/* COL M stops here */
+@media only screen and (max-width: 992px) and (min-width: 959px) {
+
+    /* NAVIGATION */
+    nav .sidenav-trigger i {
+        margin-top: 8px;
+    }
+    /* END OF NAVIGATION */
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (min-width: 768px) and (max-width: 958px) {
+
+    /* NAVIGATION */
+    nav .sidenav-trigger i {
+        margin-top: 8px;
+        font-size: 30px;
+    }
+    /* END OF NAVIGATION */
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    /* NAVIGATION */
+    nav {
+        height: 75px;
+        line-height: 75px;
+    }
+    /* END OF NAVIGATION */
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    /* NAVIGATION */
+    nav {
+        height: 70px;
+        line-height: 70px;
+    }
+    /* END OF NAVIGATION */
+
+}
+
+/* Mobile Portrait Size iphone 5 */
+@media only screen and (max-width: 319px) {
+
+    /* NAVIGATION */
+    nav {
+        height: 70px;
+        line-height: 70px;
+    }
+
+    nav .sidenav-trigger i {
+        font-size: 27px;
+    }
+    /* END OF NAVIGATION */
+
+}
+/*END OF MEDIA QUERIES*/

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:300,400|News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:300,400|Zilla+Slab&display=swap');
 
 html, body {
     overflow-x: hidden;
@@ -25,14 +25,14 @@ html, body {
 .bg-black {
     background-color: #212121 !important;
 }
+
+.turqoise {
+    color: #00ffff !important;
+}
 /* END OF COLOR */
 
 
 /* FONTS */
-.news {
-    font-family: "News Cycle", sans-serif;
-}
-
 .nunito {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -44,15 +44,11 @@ html, body {
 .lombok {
     font-family: 'Lombok', sans-serif;
 }
-/* END OF FONTS */
 
-
-/* MARGINS AND PADS */
-.p-menu {
-    padding-left: 15%;
-    padding-right: 15%;
+.zilla {
+    font-family: 'Zilla Slab', cursive;
 }
-/* END OF MARGINS AND PADS */
+/* END OF FONTS */
 
 
 /* MATERIAL ICONS */
@@ -71,6 +67,14 @@ material-icons {
 /* END OF MATERIAL ICONS */
 
 
+/* MARGINS AND PADS */
+.p-menu {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/* END OF MARGINS AND PADS */
+
+
 /* FORMS */
 input, textarea {
     box-sizing : border-box !important;
@@ -78,6 +82,19 @@ input, textarea {
 .input-field {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+textarea.materialize-textarea,
+.input-field input {
+    border: 2px solid #c7c7c7  !important;
+    color: gray !important;
+    font-size: 17px !important;
+    border-radius: 2px !important;
+}
+
+.input-field input {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
 /* valid color */
 .input-field input[type=text].valid,
@@ -127,7 +144,7 @@ input, textarea {
         padding-left: 5%;
         padding-right: 5%;
     }
-    /* END OF MARGINS AND PADS */ 
+    /* END OF MARGINS AND PADS */
 
 }
 
@@ -139,7 +156,7 @@ input, textarea {
         padding-left: 3%;
         padding-right: 3%;
     }
-    /* END OF MARGINS AND PADS */    
+    /* END OF MARGINS AND PADS */
 
 }
 
