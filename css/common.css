@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:300,400|Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:300,400|Zilla+Slab:400,500&display=swap');
 
 html, body {
     overflow-x: hidden;
@@ -28,6 +28,10 @@ html, body {
 
 .turqoise {
     color: #00ffff !important;
+}
+
+.bg-turqoise {
+    background-color: #00ffff !important;
 }
 /* END OF COLOR */
 
