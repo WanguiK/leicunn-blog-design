@@ -18,14 +18,6 @@ html, body {
 
 
 /* COLOR */
-.text-black {
-    color: #212121 !important;
-}
-
-.bg-black {
-    background-color: #212121 !important;
-}
-
 .turqoise {
     color: #00ffff !important;
 }
@@ -52,6 +44,10 @@ html, body {
 .zilla {
     font-family: 'Zilla Slab', cursive;
 }
+
+/* .consolas {
+    font-family: 'Lucida Console', monospace;
+} */
 /* END OF FONTS */
 
 
@@ -83,35 +79,35 @@ material-icons {
 input, textarea {
     box-sizing : border-box !important;
 }
-.input-field {
+.input-field:not(.modal-form) {
     margin-top: 0;
     margin-bottom: 0;
 }
 
 textarea.materialize-textarea,
-.input-field input {
+.input-field:not(.modal-form) input {
     border: 2px solid #c7c7c7  !important;
     color: gray !important;
     font-size: 17px !important;
     border-radius: 2px !important;
 }
 
-.input-field input {
+.input-field:not(.modal-form) input {
     padding-left: 5px !important;
     padding-right: 5px !important;
 }
 /* valid color */
-.input-field input[type=text].valid,
-.input-field input[type=text]:focus,
-.input-field input[type=email]:focus,
-.input-field input[type=email].valid,
-.input-field textarea:focus {
+.input-field:not(.modal-form) input[type=text].valid,
+.input-field:not(.modal-form) input[type=text]:focus,
+.input-field:not(.modal-form) input[type=email]:focus,
+.input-field:not(.modal-form) input[type=email].valid,
+.input-field:not(.modal-form) textarea:focus {
     border-bottom: 2px solid #c7c7c7 !important;
     box-shadow: none !important;
 }
 /* invalid color */
-.input-field input[type=text].invalid,
-.input-field input[type=email].invalid {
+.input-field:not(.modal-form) input[type=text].invalid,
+.input-field:not(.modal-form) input[type=email].invalid {
     border-bottom: 2px solid #c7c7c7 !important;
     box-shadow: none !important;
 }
