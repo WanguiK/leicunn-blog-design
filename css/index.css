@@ -324,7 +324,7 @@ nav .nav-wrapper ul li a:hover {
 }
 
 #posts .row .col-normal .card .card-content p {
-    padding-bottom: 13px;
+    padding: 13px 0;
 }
 
 #posts .row .col-normal .card .card-content p,
@@ -685,6 +685,12 @@ nav .nav-wrapper ul li a:hover {
     }
     /* END OF JUMBO */
 
+    /* POSTS */
+    #posts {
+        width: 90%;
+    }
+    /* END OF POSTS */
+
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1201px){
@@ -746,6 +752,16 @@ nav .nav-wrapper ul li a:hover {
         font-size: 16px;
     }
     /* END OF JUMBO */
+
+    /* POSTS */
+    #posts {
+        width: 90%;
+    }
+
+    #posts .row .col-normal .card .card-content h1 {
+        font-size: 1.7em;
+    }
+    /* END OF POSTS */
 
     /* FOOTER */
     .page-footer .container {
@@ -823,6 +839,33 @@ nav .nav-wrapper ul li a:hover {
         font-size: 16px;
     }
     /* END OF JUMBO */
+
+    /* POSTS */
+    #posts {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    #posts .col {
+        padding: 0 1rem;
+    }
+
+    #posts .row .col-normal .card .card-image .card-title {
+        font-size: 11px;
+    }
+
+    #posts .row .col-normal .card .card-image {
+        height: 350px;
+    }
+
+    #posts .row .col-normal .card .card-content h1 {
+        font-size: 1.7em;
+    }
+
+    #posts .row .col-normal .card .card-content a {
+        font-size: 11px;
+    }
+    /* END OF POSTS */
 
     /* FOOTER */
     .page-footer .container {
@@ -948,6 +991,17 @@ nav .nav-wrapper ul li a:hover {
     }
     /* END OF JUMBO */
 
+    /* POSTS */
+    #posts {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    #posts .col {
+        padding: 10px 1.5rem;
+    }
+    /* END OF POSTS */
+
     /* SUBSCRIBE */
     #subscribe form .input-field {
         width: inherit !important;
@@ -1067,6 +1121,41 @@ nav .nav-wrapper ul li a:hover {
         font-size: 32px;
     }
     /* END OF JUMBO */
+
+    /* POSTS */
+    #posts {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    #posts .row {
+        margin-bottom: auto;
+    }
+
+    #posts .col {
+        padding: 0 1rem;
+    }
+
+    #posts .row .col-normal .card .card-image .card-title {
+        font-size: 11px;
+    }
+
+    #posts .row .col-normal .card .card-image {
+        height: 350px;
+    }
+
+    #posts .row .col-normal .card .card-content h1 {
+        font-size: 1.8em;
+    }
+
+    #posts .row .col-normal .card .card-content p i {
+        font-size: 16px;
+    }
+
+    #posts .row .col-normal .card .card-content a {
+        font-size: 11px;
+    }
+    /* END OF POSTS */
 
     /* SUBSCRIBE */
     #subscribe {
@@ -1231,6 +1320,41 @@ nav .nav-wrapper ul li a:hover {
         font-size: 16px;
     }
     /* END OF JUMBO */
+
+    /* POSTS */
+    #posts {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #posts .row {
+        margin-bottom: auto;
+    }
+
+    #posts .col {
+        padding: 0 1rem;
+    }
+
+    #posts .row .col-normal .card .card-image .card-title {
+        font-size: 11px;
+    }
+
+    #posts .row .col-normal .card .card-image {
+        height: 350px;
+    }
+
+    #posts .row .col-normal .card .card-content h1 {
+        font-size: 1.8em;
+    }
+
+    #posts .row .col-normal .card .card-content p i {
+        font-size: 16px;
+    }
+
+    #posts .row .col-normal .card .card-content a {
+        font-size: 11px;
+    }
+    /* END OF POSTS */
 
     /* SUBSCRIBE */
     #subscribe {
@@ -1430,6 +1554,41 @@ nav .nav-wrapper ul li a:hover {
         font-size: 16px;
     }
     /* END OF JUMBO */
+
+    /* POSTS */
+    #posts {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #posts .row {
+        margin-bottom: auto;
+    }
+
+    #posts .col {
+        padding: 0 1rem;
+    }
+
+    #posts .row .col-normal .card .card-image .card-title {
+        font-size: 11px;
+    }
+
+    #posts .row .col-normal .card .card-image {
+        height: 350px;
+    }
+
+    #posts .row .col-normal .card .card-content h1 {
+        font-size: 1.8em;
+    }
+
+    #posts .row .col-normal .card .card-content p i {
+        font-size: 16px;
+    }
+
+    #posts .row .col-normal .card .card-content a {
+        font-size: 11px;
+    }
+    /* END OF POSTS */
 
     /* SUBSCRIBE */
     #subscribe {
