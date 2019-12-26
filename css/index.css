@@ -661,9 +661,29 @@ nav .nav-wrapper ul li a:hover {
 
 /*MEDIA QUERIES*/
 /* Larger than normal laptop sizes */
-@media only screen and (min-width: 1601px){
+@media only screen and (max-width: 1850px) and (min-width: 1601px){
 
+    /* JUMBO */
+    #jumbo {
+        margin: 20px;
+    }
 
+    #jumbo .col {
+        padding: 15px;
+    }
+
+    #jumbo .col .card .card-image .card-title {
+        padding: 30px !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        padding: 15px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div h1 {
+        font-size: 35px;
+    }
+    /* END OF JUMBO */
 
 }
 
@@ -678,6 +698,54 @@ nav .nav-wrapper ul li a:hover {
         width: 80%;
     }
     /* END OF SEARCH MODAL */
+
+    /* JUMBO */
+    #jumbo {
+        margin: 20px;
+    }
+
+    #jumbo .col {
+        padding: 5px;
+    }
+
+    #jumbo .l4 {
+        max-height: 530px;
+    }
+
+    #jumbo .col .card {
+        height: 560px;
+    }
+
+    #jumbo .col .card .card-image .card-title {
+        padding: 20px !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        padding: 15px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        font-size: 11px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div h1 {
+        font-size: 32px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p {
+        padding: 10px 0;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p,
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 16px;
+    }
+    /* END OF JUMBO */
 
     /* FOOTER */
     .page-footer .container {
@@ -707,6 +775,54 @@ nav .nav-wrapper ul li a:hover {
     /* NAVIGATION */
 
     /* END OF NAVIGATION */
+
+    /* JUMBO */
+    #jumbo {
+        margin: 20px 10px;
+    }
+
+    #jumbo .col {
+        padding: 5px;
+    }
+
+    #jumbo .l4 {
+        max-height: 530px;
+    }
+
+    #jumbo .col .card {
+        height: 560px;
+    }
+
+    #jumbo .col .card .card-image .card-title {
+        padding: 15px !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        padding: 10px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        font-size: 11px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div h1 {
+        font-size: 30px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p {
+        padding: 10px 0;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p,
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 16px;
+    }
+    /* END OF JUMBO */
 
     /* FOOTER */
     .page-footer .container {
@@ -764,6 +880,19 @@ nav .nav-wrapper ul li a:hover {
     }
     /* END OF NAVIGATION */
 
+    /* JUMBO */
+    #jumbo .col .card .card-image .card-title div.cont {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 2px solid #00ffff;
+        text-align: center;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        float: none !important;
+    }
+    /* END OF JUMBO */
+
     /* FOOTER */
     .page-footer .container {
         max-width: 65%;
@@ -805,6 +934,19 @@ nav .nav-wrapper ul li a:hover {
         font-size: 35px;
     }
     /* END OF NAVIGATION */
+
+    /* JUMBO */
+    #jumbo .col .card .card-image .card-title div.cont {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 2px solid #00ffff;
+        text-align: center;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        float: none !important;
+    }
+    /* END OF JUMBO */
 
     /* SUBSCRIBE */
     #subscribe form .input-field {
@@ -884,6 +1026,47 @@ nav .nav-wrapper ul li a:hover {
         font-size: 35px;
     }
     /* END OF NAVIGATION */
+
+    /* JUMBO */
+    #jumbo {
+        margin: 35px;
+    }
+
+    #jumbo .col {
+        padding: 0;
+    }
+
+    #jumbo .l4 {
+        max-height: 560px;
+    }
+
+    #jumbo .col .card {
+        height: 530px;
+    }
+
+    #jumbo .col .card .card-image .card-title {
+        padding: 25px !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        padding: 10px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 2px solid #00ffff;
+        text-align: center;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        float: none !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div h1 {
+        font-size: 32px;
+    }
+    /* END OF JUMBO */
 
     /* SUBSCRIBE */
     #subscribe {
@@ -989,6 +1172,65 @@ nav .nav-wrapper ul li a:hover {
         line-height: 70px;
     }
     /* END OF NAVIGATION */
+
+    /* JUMBO */
+    #jumbo {
+        margin: 5px;
+    }
+
+    #jumbo .col {
+        padding: 0;
+    }
+
+    #jumbo .l4 {
+        max-height: 530px;
+    }
+
+    #jumbo .col .card {
+        height: 500px;
+    }
+
+    #jumbo .col .card .card-image .card-title {
+        padding: 15px !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        padding: 10px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 2px solid #00ffff;
+        text-align: center;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        font-size: 11px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        float: none !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div h1 {
+        font-size: 29px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p {
+        padding: 8px 0;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p,
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 16px;
+    }
+    /* END OF JUMBO */
 
     /* SUBSCRIBE */
     #subscribe {
@@ -1116,6 +1358,11 @@ nav .nav-wrapper ul li a:hover {
         line-height: 70px;
     }
 
+    nav.p-menu {
+        padding: 0;
+        margin: 0;
+    }
+
     nav .sidenav-trigger i {
         font-size: 27px;
     }
@@ -1124,6 +1371,65 @@ nav .nav-wrapper ul li a:hover {
         width: 100%;
     }
     /* END OF NAVIGATION */
+
+    /* JUMBO */
+    #jumbo {
+        margin: 5px;
+    }
+
+    #jumbo .col {
+        padding: 0;
+    }
+
+    #jumbo .l4 {
+        max-height: 530px;
+    }
+
+    #jumbo .col .card {
+        height: 500px;
+    }
+
+    #jumbo .col .card .card-image .card-title {
+        padding: 15px !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        padding: 10px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 2px solid #00ffff;
+        text-align: center;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        font-size: 11px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont button {
+        float: none !important;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div h1 {
+        font-size: 29px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p {
+        padding: 8px 0;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p,
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #jumbo .col .card .card-image .card-title div.cont div p i {
+        font-size: 16px;
+    }
+    /* END OF JUMBO */
 
     /* SUBSCRIBE */
     #subscribe {
