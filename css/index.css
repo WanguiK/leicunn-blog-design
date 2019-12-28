@@ -140,6 +140,30 @@ nav .nav-wrapper ul li a:hover {
 /* END OF NAVIGATION */
 
 
+/* SIDENAV */
+.sidenav {
+    border-top: 6px solid #212121;
+    padding-top: 36px;
+    width: 250px;
+}
+
+.sidenav li a {
+    font-weight: bold;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+}
+
+.sidenav li a:hover,
+.sidenav li a:active,
+.sidenav li a:focus {
+    border-right: 4px solid #212121;
+    border-left: 4px solid #212121;
+    background: transparent;
+    transition: all .3s;
+}
+/* END OF SIDENAV */
+
+
 /* JUMBO */
 #jumbo {
     margin: 20px 50px;
@@ -481,22 +505,22 @@ nav .nav-wrapper ul li a:hover {
     font-weight: bold;
 }
 
-.row-quote .col .card .card-content p {
+.row-quote .col .card .card-stacked .card-content p {
     padding-top: 22px;
 }
 
-.row-quote .col .card .card-content p,
-.row-quote .col .card .card-content p i {
+.row-quote .col .card .card-stacked .card-content p,
+.row-quote .col .card .card-stacked .card-content p i {
     font-size: 16px;
     line-height: 24px;
 }
 
-.row-quote .col .card .card-content p i {
+.row-quote .col .card .card-stacked .card-content p i {
     vertical-align: bottom;
     font-size: 17px;
 }
 
-.row-quote .col .card .card-content h1 {
+.row-quote .col .card .card-stacked .card-content h1 {
     font-size: 2.5em;
     font-weight: 500;
     margin: 20px 0 10px 0;
@@ -691,6 +715,12 @@ nav .nav-wrapper ul li a:hover {
     }
     /* END OF POSTS */
 
+    /* POSTS ROW FOUR */
+    #posts .row-quote .col {
+        max-height: 550px !important;
+    }
+    /* END OF POSTS ROW FOUR */
+
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1201px){
@@ -758,10 +788,43 @@ nav .nav-wrapper ul li a:hover {
         width: 90%;
     }
 
+    #posts .col {
+        padding: 0 .8rem;
+    }
+
     #posts .row .col-normal .card .card-content h1 {
         font-size: 1.7em;
     }
     /* END OF POSTS */
+
+    /* POSTS ROW FOUR */
+    .row-quote .card-panel {
+        padding: 10px;
+    }
+
+    .row-quote .card-panel h2:first-child {
+        font-size: 30px;
+    }
+
+    .row-quote .card-panel h2 i {
+        font-size: 40px;
+    }
+
+    .row-quote .card-panel h2:nth-child(2) {
+        margin-left: 20px;
+        padding-left: 15px;
+        font-size: 23px;
+    }
+
+    .row-quote .col .card .card-stacked {
+        padding: 10px;
+    }
+
+    .row-quote .col .card .card-stacked .card-content h1 {
+        font-size: 2em;
+        margin: 20px 0 10px 0;
+    }
+    /* END OF POSTS ROW FOUR */
 
     /* FOOTER */
     .page-footer .container {
@@ -847,7 +910,7 @@ nav .nav-wrapper ul li a:hover {
     }
 
     #posts .col {
-        padding: 0 1rem;
+        padding: 0 .5rem;
     }
 
     #posts .row .col-normal .card .card-image .card-title {
@@ -866,6 +929,39 @@ nav .nav-wrapper ul li a:hover {
         font-size: 11px;
     }
     /* END OF POSTS */
+
+    /* POSTS ROW FOUR */
+    #posts .row-quote .col {
+        max-height: 550px !important;
+    }
+
+    .row-quote .card-panel {
+        padding: 10px;
+    }
+
+    .row-quote .card-panel h2:first-child {
+        font-size: 30px;
+    }
+
+    .row-quote .card-panel h2 i {
+        font-size: 40px;
+    }
+
+    .row-quote .card-panel h2:nth-child(2) {
+        margin-left: 20px;
+        padding-left: 15px;
+        font-size: 23px;
+    }
+
+    .row-quote .col .card .card-stacked {
+        padding: 10px;
+    }
+
+    .row-quote .col .card .card-stacked .card-content h1 {
+        font-size: 2em;
+        margin: 20px 0 10px 0;
+    }
+    /* END OF POSTS ROW FOUR */
 
     /* FOOTER */
     .page-footer .container {
@@ -914,6 +1010,12 @@ nav .nav-wrapper ul li a:hover {
     /* END OF BLOG LOGO */
 
     /* NAVIGATION */
+    nav.p-menu {
+        padding: 0;
+        margin: 0;
+        height: 35px;
+    }
+
     .sidenav-trigger {
         padding: 30px 30px 0 0;
     }
@@ -935,6 +1037,24 @@ nav .nav-wrapper ul li a:hover {
         float: none !important;
     }
     /* END OF JUMBO */
+
+    /* POSTS ROW TWO */
+    #posts .row-feature .col.l7 {
+        margin-bottom: 40px;
+    }
+
+    #posts .row-feature .col.l7 .card {
+        height: 550px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title {
+        padding: 20px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont {
+        padding: 15px;
+    }
+    /* END OF POSTS ROW TWO */
 
     /* FOOTER */
     .page-footer .container {
@@ -969,6 +1089,12 @@ nav .nav-wrapper ul li a:hover {
     /* END OF BLOG LOGO */
 
     /* NAVIGATION */
+    nav.p-menu {
+        padding: 0;
+        margin: 0;
+        height: 30px;
+    }
+
     .sidenav-trigger {
         padding: 0 30px;
     }
@@ -1001,6 +1127,48 @@ nav .nav-wrapper ul li a:hover {
         padding: 10px 1.5rem;
     }
     /* END OF POSTS */
+
+    /* POSTS ROW TWO */
+    #posts .row-feature .col.l7 {
+        margin-bottom: 40px;
+    }
+
+    #posts .row-feature .col.l7 .card {
+        height: 550px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title {
+        padding: 15px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont {
+        padding: 15px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont a.btn {
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont div h1 {
+        font-size: 1.5em;
+    }
+    /* END OF POSTS ROW TWO */
+
+    /* POSTS LOAD MORE */
+    #posts .load-more {
+        padding: 20px 0;
+    }
+
+    #posts .load-more button {
+        font-size: 12px;
+        line-height: 40px;
+        height: 40px;
+    }
+    /* END OF POSTS LOAD MORE */
 
     /* SUBSCRIBE */
     #subscribe form .input-field {
@@ -1070,6 +1238,12 @@ nav .nav-wrapper ul li a:hover {
     nav {
         height: 75px;
         line-height: 75px;
+    }
+
+    nav.p-menu {
+        padding: 0;
+        margin: 0;
+        height: 30px;
     }
 
     .sidenav-trigger {
@@ -1156,6 +1330,73 @@ nav .nav-wrapper ul li a:hover {
         font-size: 11px;
     }
     /* END OF POSTS */
+
+    /* POSTS ROW TWO */
+    #posts .row-feature .col.l7 {
+        margin-bottom: 35px;
+    }
+
+    #posts .row-feature .col.l7 .card {
+        height: 500px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title {
+        padding: 10px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont {
+        padding: 10px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont a.btn {
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont div h1 {
+        font-size: 1.3em;
+    }
+    /* END OF POSTS ROW TWO */
+
+    /* POSTS ROW FOUR */
+    #posts .row-quote .col {
+        max-height: none !important;
+        padding-bottom: 35px;
+    }
+
+    .row-quote .card-panel {
+        padding: 15px 20px 15px 15px;
+    }
+
+    .row-quote .card-panel h2:first-child {
+        font-size: 30px;
+    }
+
+    .row-quote .card-panel h2 i {
+        font-size: 32px;
+    }
+
+    .row-quote .card-panel h2:nth-child(2) {
+        margin-left: 30px;
+        padding-left: 20px;
+        font-size: 25px;
+    }
+    /* END OF POSTS ROW FOUR */
+
+    /* POSTS LOAD MORE */
+    #posts .load-more {
+        padding: 20px 0;
+    }
+
+    #posts .load-more button {
+        font-size: 12px;
+        line-height: 40px;
+        height: 40px;
+    }
+    /* END OF POSTS LOAD MORE */
 
     /* SUBSCRIBE */
     #subscribe {
@@ -1260,6 +1501,11 @@ nav .nav-wrapper ul li a:hover {
         height: 70px;
         line-height: 70px;
     }
+
+    nav.p-menu {
+        padding: 0;
+        margin: 0;
+    }
     /* END OF NAVIGATION */
 
     /* JUMBO */
@@ -1355,6 +1601,73 @@ nav .nav-wrapper ul li a:hover {
         font-size: 11px;
     }
     /* END OF POSTS */
+
+    /* POSTS ROW TWO */
+    #posts .row-feature .col.l7 {
+        margin-bottom: 35px;
+    }
+
+    #posts .row-feature .col.l7 .card {
+        height: 500px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title {
+        padding: 10px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont {
+        padding: 5px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont a.btn {
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont div h1 {
+        font-size: 1.3em;
+    }
+    /* END OF POSTS ROW TWO */
+
+    /* POSTS ROW FOUR */
+    #posts .row-quote .col {
+        max-height: none !important;
+        padding-bottom: 35px;
+    }
+
+    .row-quote .card-panel {
+        padding: 10px 15px 10px 10px;
+    }
+
+    .row-quote .card-panel h2:first-child {
+        font-size: 28px;
+    }
+
+    .row-quote .card-panel h2 i {
+        font-size: 30px;
+    }
+
+    .row-quote .card-panel h2:nth-child(2) {
+        margin-left: 20px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    /* END OF POSTS ROW FOUR */
+
+    /* POSTS LOAD MORE */
+    #posts .load-more {
+        padding: 20px 0;
+    }
+
+    #posts .load-more button {
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+    }
+    /* END OF POSTS LOAD MORE */
 
     /* SUBSCRIBE */
     #subscribe {
@@ -1589,6 +1902,73 @@ nav .nav-wrapper ul li a:hover {
         font-size: 11px;
     }
     /* END OF POSTS */
+
+    /* POSTS ROW TWO */
+    #posts .row-feature .col.l7 {
+        margin-bottom: 35px;
+    }
+
+    #posts .row-feature .col.l7 .card {
+        height: 500px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title {
+        padding: 10px !important;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont {
+        padding: 5px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont a.btn {
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #posts .row-feature .col.l7 .card .card-image .card-title div.cont div h1 {
+        font-size: 1.3em;
+    }
+    /* END OF POSTS ROW TWO */
+
+    /* POSTS ROW FOUR */
+    #posts .row-quote .col {
+        max-height: none !important;
+        padding-bottom: 35px;
+    }
+
+    .row-quote .card-panel {
+        padding: 10px 15px 10px 10px;
+    }
+
+    .row-quote .card-panel h2:first-child {
+        font-size: 28px;
+    }
+
+    .row-quote .card-panel h2 i {
+        font-size: 30px;
+    }
+
+    .row-quote .card-panel h2:nth-child(2) {
+        margin-left: 20px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    /* END OF POSTS ROW FOUR */
+
+    /* POSTS LOAD MORE */
+    #posts .load-more {
+        padding: 20px 0;
+    }
+
+    #posts .load-more button {
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+    }
+    /* END OF POSTS LOAD MORE */
 
     /* SUBSCRIBE */
     #subscribe {
